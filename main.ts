@@ -9,5 +9,7 @@ forever(function () {
         light.showRing(
         `white white white white white white green green green white`
         )
+        pause(200)
+        light.stopAllAnimations()
     }
 })
