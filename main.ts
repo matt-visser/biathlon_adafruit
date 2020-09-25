@@ -5,7 +5,9 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
 forever(function () {
     makerController.player1.setAnalog(ArcadeAnalogButton.LeftRight, input.acceleration(Dimension.X))
     makerController.player1.setAnalog(ArcadeAnalogButton.DownUp, input.acceleration(Dimension.Y))
-    light.showRing(
-    `white white white white white white white black white white`
-    )
+    if (input.acceleration(Dimension.X) > 0) {
+        light.showRing(
+        `white white white white white white green green green white`
+        )
+    }
 })
