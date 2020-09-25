@@ -1,6 +1,9 @@
 input.buttonA.onEvent(ButtonEvent.Click, function () {
     music.pewPew.play()
     light.showAnimation(light.theaterChaseAnimation, 500)
+    light.showRing(
+    `black black black black black black black black black black`
+    )
     makerController.player1.press(ArcadeButton.A)
 })
 forever(function () {
