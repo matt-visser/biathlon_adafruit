@@ -1,10 +1,10 @@
 input.buttonA.onEvent(ButtonEvent.Click, function () {
+    makerController.player1.press(ArcadeButton.A)
     music.pewPew.play()
     light.showAnimation(light.theaterChaseAnimation, 500)
     light.showRing(
     `black black black black black black black black black black`
     )
-    makerController.player1.press(ArcadeButton.A)
 })
 forever(function () {
     makerController.player1.setAnalog(ArcadeAnalogButton.LeftRight, input.acceleration(Dimension.X))
