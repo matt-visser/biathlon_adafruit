@@ -10,6 +10,6 @@ forever(function () {
         `white white white white white white green green green white`
         )
         pause(200)
-        light.stopAllAnimations()
+        light.setAll(0x000000)
     }
 })
